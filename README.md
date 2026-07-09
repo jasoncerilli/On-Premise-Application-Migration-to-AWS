@@ -39,14 +39,8 @@ A lift-and-shift migration of a two-tier application from a simulated on-premise
 ## Architecture Overview
 
 ### Before Migration (Simulated On-Premise)
+![On-prem Architecture Diagram](photos/onprem.png)
 On-Premise Environment
-┌─────────────────────────────┐
-│  Application Server         │
-│  (EC2 simulating on-prem)   │
-│                             │
-│  MySQL Database             │
-│  (local/self-managed)       │
-└─────────────────────────────┘
 
 ### After Migration (AWS Cloud)
 AWS Cloud
