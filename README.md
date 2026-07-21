@@ -177,6 +177,12 @@ The database should never be directly reachable from the internet. Placing RDS i
 - Application cutover to cloud infrastructure
 
 ---
+## Key Points
+- This is the "Rehost + Replatform" pattern — one of the 7 Rs of cloud migration
+- DMS is the key differentiator here — it handles the actual data move with minimal downtime
+- Why RDS instead of MySQL on EC2? Managed service = automated backups, patching, multi-AZ support
+- Private subnet for RDS is a security best practice — it should NEVER be publicly accessible
+- Security Groups are the firewall — EC2 SG allows app traffic inbound, RDS SG only allows traffic FROM the EC2 SG
 
 ## Related
 
