@@ -106,6 +106,7 @@ Provisions the simulated on-premise environment — an EC2 instance running MySQ
 
 > [📸 Screenshot: EC2 instance running with MySQL service active]
 > ![On Prem Server](photos/launchinstance.png)
+![On Prem Server](photos/launchinstance2.png)
 
 ---
 
