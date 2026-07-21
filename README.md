@@ -43,28 +43,6 @@ A lift-and-shift migration of a two-tier application from a simulated on-premise
 On-Premise Environment
 
 ### After Migration (AWS Cloud)
-AWS Cloud
-┌──────────────────────────────────────────────┐
-│                   VPC                         │
-│                                               │
-│  Public Subnet                                │
-│  ┌─────────────────┐                          │
-│  │  EC2 (App Layer) │ ← Migrated app server   │
-│  └────────┬─────────┘                         │
-│           │                                   │
-│  Private Subnet                               │
-│  ┌─────────────────┐                          │
-│  │  RDS MySQL       │ ← Migrated database      │
-│  │  (target DB)     │                          │
-│  └─────────────────┘                          │
-│                                               │
-│  AWS DMS                                      │
-│  ┌──────────────────────────────────┐         │
-│  │  Replication Instance            │         │
-│  │  Source Endpoint → MySQL (EC2)   │         │
-│  │  Target Endpoint → RDS MySQL     │         │
-│  └──────────────────────────────────┘         │
-└──────────────────────────────────────────────┘
 
 ---
 
