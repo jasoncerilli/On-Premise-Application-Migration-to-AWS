@@ -145,6 +145,8 @@ Creates the DMS replication instance, configures source and target endpoints wit
 
 **Validated:** Migration task completes with Load Complete status. Table counts match between source and target. Data integrity confirmed by querying both databases.
 
+![](photos/dms2.png)
+
 > [📸 Screenshot: DMS migration task showing 100% table load complete]
 > [📸 Screenshot: Table statistics showing matching row counts source vs target]
 
@@ -154,6 +156,7 @@ Creates the DMS replication instance, configures source and target endpoints wit
 
 Queries both the source MySQL and target RDS to confirm data integrity. Updates the application configuration to point to the RDS endpoint. Final validation confirms the application is running fully on AWS.
 
+![](photos/dms3.png)
 > [📸 Screenshot: Query results matching between source and target databases]
 > [📸 Screenshot: Application running on EC2 connecting to RDS endpoint]
 
