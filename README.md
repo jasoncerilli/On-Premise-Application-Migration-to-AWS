@@ -39,6 +39,19 @@ A lift-and-shift migration of a two-tier application from a simulated on-premise
 
 ![On-prem Architecture Diagram](photos/onprem.png)
 
+## End-to-End Flow
+
+1. **Legacy EC2** (simulating on-prem server) runs the Employee Directory App with a local MySQL database
+2. A new **Cloud EC2** is provisioned — same app code is deployed here (Rehost / Lift & Shift)
+3. **Amazon RDS (MySQL)** is provisioned in a private subnet as the new managed database target
+4. **AWS DMS** (Database Migration Service) is configured with:
+    - Source endpoint: Legacy EC2 MySQL
+    - Target endpoint: Amazon RDS MySQL
+5. DMS runs a **full-load migration** — all existing data moves from Legacy EC2 → RDS
+6. Application config on Cloud EC2 is updated to point to the **RDS endpoint** instead of local MySQL
+7. **Cutover** — traffic now flows through Cloud EC2 → RDS entirely
+8. Legacy EC2 is decommissioned (optional cleanup step)
+9. **VPC + Security Groups** control all traffic between EC2, RDS, and DMS throughout
 ## AWS Services Used
 
 | Service | Purpose |
