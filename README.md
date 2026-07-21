@@ -105,7 +105,7 @@ Provisions the simulated on-premise environment — an EC2 instance running MySQ
 **Validated:** MySQL running on EC2, database populated with test records, accessible on port 3306 from within the VPC.
 
 > [📸 Screenshot: EC2 instance running with MySQL service active]
-> ![On Prem Server](photos/laucnhinstance.png)
+> ![On Prem Server](photos/launchinstance.png)
 
 ---
 
