@@ -38,7 +38,6 @@ A lift-and-shift migration of a two-tier application from a simulated on-premise
 ## Architecture Overview
 
 ![On-prem Architecture Diagram](photos/onprem.png)
-On-Premise Environment
 
 ## AWS Services Used
 
