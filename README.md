@@ -129,6 +129,11 @@ Creates an RDS MySQL instance in a private subnet as the migration target. Confi
 
 **Validated:** RDS instance in Available state, connectivity confirmed from EC2.
 
+![](photos/rds.png)
+![](photos/rds3.png)
+![](photos/rds4.png)
+
+
 > [📸 Screenshot: RDS console showing instance in Available state]
 > [📸 Screenshot: Successful MySQL connection from EC2 to RDS endpoint]
 
